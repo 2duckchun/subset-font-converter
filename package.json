@@ -2,16 +2,20 @@
   "name": "subset-font-converter",
   "version": "1.0.0",
   "type": "module",
-  "description": "",
+  "description": "Subset Font Converter",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "convert": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "subset-font",
+    "subset-font-converter",
+    "font-converter"
+  ],
+  "author": "2DC",
+  "license": "MIT",
   "packageManager": "pnpm@10.8.1",
   "dependencies": {
     "subset-font": "^2.4.0"

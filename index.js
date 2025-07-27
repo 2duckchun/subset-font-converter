@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// 예제 파일명 변경 필요
 const src = await fs.readFile(resolve(__dirname, "./src/FreesentationVF.ttf"));
 const chars = await fs.readFile(resolve(__dirname, "./src/glyphs.txt"), "utf8");
 
@@ -18,6 +19,6 @@ const subset = await subsetFont(src, chars, {
 
 console.log("변환 전 용량:", (src.length / 1024).toFixed(1), "KB");
 
-await fs.writeFile(resolve(__dirname, "./src/FreetenSubset.woff2"), subset);
+await fs.writeFile(resolve(__dirname, "./src/converted.woff2"), subset);
 
 console.log("서브셋 세팅 완료! 용량:", (subset.length / 1024).toFixed(1), "KB");
